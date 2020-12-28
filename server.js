@@ -2,6 +2,12 @@ const express=require('express')
 const mongoose=require('mongoose')
 const bodyParser=require('body-parser')
 const app=express();
+const dbconnect=require('./backend/DB/dbconnect')
+
+//DB connection
+dbconnect.connect((cb)=>{
+    console.log(cb);
+});
 
 var PORT= process.env.PORT || 3300;
 //start the server
