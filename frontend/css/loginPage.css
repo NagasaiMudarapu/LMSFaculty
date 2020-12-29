@@ -1,0 +1,43 @@
+body{
+background-color: rgb(73, 151, 224);
+}
+.container{
+    background-color: white;
+}
+.container{
+    margin-top: 40px;
+    height: 520px;
+    width: 500px;
+    /* width temprry(500) */
+}
+.form-group{
+    margin-left: 110px;
+    margin-top: 13px;
+}
+.form-control{
+    border: 1.5px solid rgb(80, 144, 218);
+}
+.form-input{
+    display: flex;
+}
+#register-btn{
+    margin-left: 190px;
+}
+#login-btn{
+    margin-left: 203px;
+}
+#register-form{
+    display: block;
+}
+#login-form{
+    display: none;
+}
+#signin-btn{
+    color:rgb(18, 112, 199);
+    background-color:white;
+    border:1px solid  rgb(211, 217, 247);
+    box-shadow: 0 4px 8px 0 rgba(187, 219, 255, 0.932), 0 6px 20px 0 rgba(125, 196, 253, 0.884);
+}
+/* .btn,.btn-primary{
+    box-shadow: 
+} */
