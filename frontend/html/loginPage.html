@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/loginPage.css" />
 </head>
 <body>
-    <p>Login Page...</p>
+  <div class="container">
+    <div class="form-group">
+      <img src="../imgs/welcome.jpg" style="height: 160px;width: 250px;" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="welcome">
+    </div>
+    <span style="display: flex;margin-left: 158px;margin-top: 10px;margin-bottom:15px;">
+      <button id="signup-btn" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Sign Up</button>
+      <button id="signin-btn" type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Sign In</button>
+    </span>
+
+    <div class="form-input">
+      <form id="register-form" action="/users" method="post">
+        <div class="form-group">
+          <div style=" display: inline-block;">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+          </div>
+          <div style="display: inline-block;">
+            <input type="email" class="form-control" name="" id="email-r" placeholder="E-mail" >
+          </div>
+        </div>
+        <div class="form-group">
+          <div style="display: inline-block;">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div style="display: inline-block;">
+            <input type="text" class="form-control" name="" id="username-r" placeholder="Username" >
+          </div>
+        </div>
+        <div class="form-group">
+          <div style="display: inline-block;">
+            <i class="fa fa-user-secret" aria-hidden="true"></i>
+          </div>
+          <div style="display: inline-block;">
+            <input type="password" class="form-control" name="" id="password-r" placeholder="Password" >
+          </div>
+        </div>
+        <button id="register-btn" type="submit" class="btn btn-primary">Register</button>
+      </form>
+  
+      <form id="login-form" action="/users" method="post">
+        <div class="form-group">
+          <div style="display: inline-block;">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div style="display: inline-block;">
+            <input type="text" class="form-control" name="" id="username-l" placeholder="Username" >
+          </div>
+        </div>
+        <div class="form-group">
+          <div style="display: inline-block;">
+            <i class="fa fa-user-secret" aria-hidden="true"></i>
+          </div>
+          <div style="display: inline-block;">
+            <input type="password" class="form-control" name="" id="password-l" placeholder="Password" >
+          </div>
+        </div>
+        <button id="login-btn" type="submit" class="btn btn-primary">Log In</button>
+      </form>
+    </div>
+
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+    <script src="../js/toggle.js"></script>
 </body>
 </html>
