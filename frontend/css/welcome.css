@@ -1,8 +1,35 @@
+img{
+    height: 500px;
+    width: 500px;
+}
+body{
+    background-color: rgb(105, 169, 230);
+    }
 .jumbotron{
     background-image: url(../imgs/trial.png);
     height: 500px ;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%     ;
 }
-img{
-    height: 500px;
-    width:500px;
+.htext{
+    text-decoration: solid;
+    font-size: 50px ;
+    font-family: cursive ;
+}
+.stext{
+    text-decoration: solid;
+    font-size: 25px ;
+    font-family: cursive;
+}
+.Assign{
+    background-image: url(../imgs/Assign.jpg);
+    height : 500px ;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%     ;
+}
+.mentor{
+    background-image: url(../imgs/good-mentor67.png);
+    height : 500px ;
+    background-repeat: no-repeat ;
+    background-size: 100% 100%     ;
 }
